@@ -12,6 +12,7 @@ public class Main {
 
         return words.stream()
                 .reduce((accum, item) -> accum.concat(" " + item)).orElseThrow();
+
     }
 
     public static void main(String[] args) {

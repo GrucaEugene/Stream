@@ -12,11 +12,12 @@ public class Main {
 
         return words.stream()
                 .reduce((accum, item) -> accum.concat(" " + item)).orElseThrow();
+
+
     }
 
     public static void main(String[] args) {
-        System.out.println(getReversed("I go to school"));
-
+        System.out.println(getReversed("I went to school"));
     }
 }
 
